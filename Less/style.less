@@ -260,6 +260,7 @@ ul{
                                     width: 270px;
                                     select{
                                         .paragraph-font-it();
+                                        color: #848484;
                                     }
                                 }
 
@@ -272,6 +273,7 @@ ul{
                                     .tr(0.3s);
 
                                     &:hover{
+                                        background: linear-gradient(120deg, @gr-i, @gr-ii);
                                         transform: scale(1.05);
                                     }
                                     &:focus{
@@ -505,4 +507,383 @@ ul{
                 }
             }
         }
+    }
+
+
+    #working{
+        .working-content{
+            .row{
+                .inputs{
+                    display: flex;
+                    padding-top: 60px;
+                    padding-left: 0 !important;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 0 !important;
+                    width: 100%;
+
+                    input{
+                        font-family: 'Arimo', sans-serif;
+                        font-style: italic;
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #848484;
+                        
+                    }
+                    .one{
+                        width: 40%;
+                    }
+                    .three{
+                        width: 40%;
+                        
+                            select{
+                                .paragraph-font-it();
+                                color: #848484;
+                            }
+                    }
+                    .search{
+                        width: 14%;
+                        button{
+                            width: 100%;
+                            background: linear-gradient(45deg, @gr-i, @gr-ii);
+                            .paragraph-font();
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 30px;
+                            color: #fff;
+                            border: none;
+                            .tr (0.3s);
+                            &:hover{
+                                background: linear-gradient(270deg, @gr-i, @gr-ii);
+
+                            }
+                        }
+                        
+                    }
+                }
+
+                .sp-check{
+                    ul{
+                        width: 100%;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                        margin-bottom: 0 !important;
+                        padding-left: 0 !important;
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-items: center;
+                        justify-content: flex-start;
+                        .check{
+                            .check-item {
+                                display: block;
+                                position: relative;
+                                padding-left: 35px;
+                                cursor: pointer;
+                                -webkit-user-select: none;
+                                -moz-user-select: none;
+                                -ms-user-select: none;
+                                user-select: none;
+                                margin-right: 40px;
+
+                                p{
+                                    // position: absolute;
+                                    // top: -2px;
+                                    // left: 28px;
+                                    margin-top: -3px;
+                                    .paragraph-font-it();
+                                    color: #999999;
+                                    margin-bottom: 0 !important;
+                                    
+                                }
+                              }
+                              
+                              /* Hide the browser's default checkbox */
+                              .check-item input {
+                                position: absolute;
+                                opacity: 0;
+                                cursor: pointer;
+                                height: 0;
+                                width: 0;
+                              }
+                              
+                              /* Create a custom checkbox */
+                              .checkmark {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 25px;
+                                width: 25px;
+                                background-color: #eee;
+                                border-radius: 4px;
+                                transform: scale(0.7);
+                                .tr(0.4s);
+                              }
+                              
+                              /* On mouse-over, add a grey background color */
+                              .check-item:hover input ~ .checkmark {
+                                background-color: #ccc;
+                              }
+                              
+                              /* When the checkbox is checked, add a blue background */
+                              .check-item input:checked ~ .checkmark {
+                                background: linear-gradient(90deg, #4fa02b, #a3b6a9);;
+                              }
+                              
+                              /* Create the checkmark/indicator (hidden when not checked) */
+                              .checkmark:after {
+                                content: "";
+                                position: absolute;
+                                display: none;
+                              }
+                              
+                              /* Show the checkmark when checked */
+                              .check-item input:checked ~ .checkmark:after {
+                                display: block;
+                              }
+                              
+                              /* Style the checkmark/indicator */
+                              .check-item .checkmark:after {
+                                left: 8px;
+                                top: 4px;
+                                width: 8px;
+                                height: 15px;
+                                border: solid white;
+                                border-width: 0 3px 3px 0;
+                                -webkit-transform: rotate(45deg);
+                                -ms-transform: rotate(45deg);
+                                transform: rotate(40deg);
+                              }
+                        }
+                    }
+                }
+                .j-list{
+                    ul{
+                        width: 100%;
+                        margin-bottom: 0 !important;
+                        padding-left: 0 !important;
+                        margin-top: 20px;
+                        .j-item{
+                            width: 100%;
+                            display: flex;
+                            flex-flow: row nowrap;
+                            align-items: center;
+                            justify-content: start;
+                            background: #f5f5f5;
+                            margin: 30px 0;
+                            border-radius: 4px;
+                            .tr(0.4s);
+
+                            .pi{
+                                padding: 10px;
+                                
+                            }
+                            .pii{
+                                width: 32.8%;
+                                padding-left: 1.7%;
+                                h6,h5,p{
+                                    margin-bottom: 0 !important;
+                                    .paragraph-font();
+                                    font-weight: 400;
+                                    .tr(0.4s);
+                                }
+                                h6{
+                                    font-size: 14px;
+                                    line-height: 30px;
+                                    color: #00b8ef;
+                                }
+                                h5{
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                    color: #222222;
+                                }
+                                p{
+                                    font-size: 14px;
+                                    line-height: 30px;
+                                    color: #444444;
+                                }
+                            }
+                            .piii{
+                                width: 18.3%;
+                                padding-left: 1.7%;
+                                i{
+                                    margin-right: 9px;
+                                    color: #444444;
+                                    .tr(0.4s);
+                                }
+                                span{
+                                    .paragraph-font();
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 30px;
+                                    color: #444444;
+                                    .tr(0.4s);
+                                }
+                            }
+                            .piv{
+                                width: 23%;
+                                padding-left: 1.7%;
+                                span{
+                                    .paragraph-font();
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 30px;
+                                    color: #444444;
+                                    .tr(0.4s);
+                                }
+                            }
+                            .pv{
+                                padding: 2.5%;
+                                a{
+                                    padding: 13px 20px 11px;
+                                    background: linear-gradient(45deg, @gr-i, @gr-ii);
+                                    border-radius: 3px;
+                                    .paragraph-font();
+                                    font-weight: 400;
+                                    font-size: 20px;
+                                    color: #ffffff;
+                                    .tr(0.2s);
+                                    &:hover{
+                                        background: #ffffff;
+                                        color: #363636;
+                                    }
+                                }
+                            }
+                            &:hover{
+                                background: linear-gradient(270deg, @gr-i, @gr-ii);
+                                
+                                .pii{
+                                    h6,h5,p{
+                                        color: #ffffff;
+                                    }
+                                }
+                                .piii{
+                                    i,span{
+                                        color: #ffffff;
+                                    }
+                                }
+                                .piv{
+                                    span{
+                                        color: #ffffff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .lost-info{
+                    margin-top: 28px;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    p{
+                        .paragraph-font();
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 30px;
+                        color: #444444;
+                        margin-bottom: 0 !important;
+                    }
+                    a{
+                        
+                        padding: 16px 20px 13px 20px;
+                        background: linear-gradient(45deg, @gr-i, @gr-ii);
+                        display: flex;
+                        flex-flow: row nowrap;
+                        align-items: center;
+                        span{
+                            .paragraph-font();
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 30px;
+                            color: #ffffff;
+                            margin-right: 7px;
+                        }
+                        i{
+                            font-size: 20px;
+                            color: #ffffff;
+                            line-height: 30px;
+                        }
+                    }
+                }
+                .tab{
+                    margin-top: 100px;
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 100px;
+
+                    .registration{
+                        width: 49%;
+                        padding: 30px 21px 30px 22px;
+                        background: #f5f5f5;
+                        .tr(0.4s);
+                        h6,span,p{
+                            margin-bottom: 0 !important;
+                            .tr(0.4s);
+                        }
+                        h6{
+                            .paragraph-font();
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 24px;
+                            color: #222222;
+                        }
+                        span{
+                            .paragraph-font();
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 26px;
+                            color: #00b8ef;
+                        }
+                        p{
+                            .paragraph-font();
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 26px;
+                            color: #222222;
+                            padding: 28px 0 30px 0;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            .tr(0.4s);
+                            span{
+                                .paragraph-font();
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 26px;
+                                color: #222222;
+                                margin-right: 8px;
+                                .tr(0.4s);
+                            }
+                            i{
+                                color: #222222;
+                                font-size: 20px;
+                                .tr(0.4s);
+                            }
+                        }
+                        &:hover{
+                            background: linear-gradient(-90deg, @gr-i, #93e6ff);
+                            h6,span,p,a{
+                                color: #ffffff;
+                            }
+                            a{
+                                span,i{
+                                    color: #ffffff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    #trw{
+        background: #f5f5f5;
     }

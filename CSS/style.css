@@ -215,6 +215,7 @@ ul {
   font-style: italic;
   font-weight: 500;
   font-size: 16px;
+  color: #848484;
 }
 #home .col-lg-12 .banner-content .part-ii .tab-content .tab-pane .inputs .input .search {
   width: 110px;
@@ -229,6 +230,7 @@ ul {
   -webkit-transition: all linear 0.3s;
 }
 #home .col-lg-12 .banner-content .part-ii .tab-content .tab-pane .inputs .input .search:hover {
+  background: linear-gradient(120deg, #00b8ef, #58d2f5);
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -479,4 +481,466 @@ ul {
   position: absolute;
   top: 115px;
   right: -131px;
+}
+#working .working-content .row .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 60px;
+  padding-left: 0 !important;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0 !important;
+  width: 100%;
+}
+#working .working-content .row .inputs input {
+  font-family: 'Arimo', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  color: #848484;
+}
+#working .working-content .row .inputs .one {
+  width: 40%;
+}
+#working .working-content .row .inputs .three {
+  width: 40%;
+}
+#working .working-content .row .inputs .three select {
+  font-family: 'Arimo', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  color: #848484;
+}
+#working .working-content .row .inputs .search {
+  width: 14%;
+}
+#working .working-content .row .inputs .search button {
+  width: 100%;
+  background: linear-gradient(45deg, #00b8ef, #58d2f5);
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  border: none;
+  transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+}
+#working .working-content .row .inputs .search button:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#00b8ef), to(#58d2f5));
+  background: linear-gradient(270deg, #00b8ef, #58d2f5);
+}
+#working .working-content .row .sp-check ul {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 0 !important;
+  padding-left: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+#working .working-content .row .sp-check ul .check {
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+#working .working-content .row .sp-check ul .check .check-item {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 40px;
+}
+#working .working-content .row .sp-check ul .check .check-item p {
+  margin-top: -3px;
+  font-family: 'Arimo', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  color: #999999;
+  margin-bottom: 0 !important;
+}
+#working .working-content .row .sp-check ul .check .check-item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+#working .working-content .row .sp-check ul .check .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 4px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#working .working-content .row .sp-check ul .check .check-item:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+#working .working-content .row .sp-check ul .check .check-item input:checked ~ .checkmark {
+  background: -webkit-gradient(linear, left top, right top, from(#4fa02b), to(#a3b6a9));
+  background: linear-gradient(90deg, #4fa02b, #a3b6a9);
+}
+#working .working-content .row .sp-check ul .check .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+#working .working-content .row .sp-check ul .check .check-item input:checked ~ .checkmark:after {
+  display: block;
+}
+#working .working-content .row .sp-check ul .check .check-item .checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 8px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(40deg);
+}
+#working .working-content .row .j-list ul {
+  width: 100%;
+  margin-bottom: 0 !important;
+  padding-left: 0 !important;
+  margin-top: 20px;
+}
+#working .working-content .row .j-list ul .j-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  background: #f5f5f5;
+  margin: 30px 0;
+  border-radius: 4px;
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#working .working-content .row .j-list ul .j-item .pi {
+  padding: 10px;
+}
+#working .working-content .row .j-list ul .j-item .pii {
+  width: 32.8%;
+  padding-left: 1.7%;
+}
+#working .working-content .row .j-list ul .j-item .pii h6,
+#working .working-content .row .j-list ul .j-item .pii h5,
+#working .working-content .row .j-list ul .j-item .pii p {
+  margin-bottom: 0 !important;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#working .working-content .row .j-list ul .j-item .pii h6 {
+  font-size: 14px;
+  line-height: 30px;
+  color: #00b8ef;
+}
+#working .working-content .row .j-list ul .j-item .pii h5 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #222222;
+}
+#working .working-content .row .j-list ul .j-item .pii p {
+  font-size: 14px;
+  line-height: 30px;
+  color: #444444;
+}
+#working .working-content .row .j-list ul .j-item .piii {
+  width: 18.3%;
+  padding-left: 1.7%;
+}
+#working .working-content .row .j-list ul .j-item .piii i {
+  margin-right: 9px;
+  color: #444444;
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#working .working-content .row .j-list ul .j-item .piii span {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444444;
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#working .working-content .row .j-list ul .j-item .piv {
+  width: 23%;
+  padding-left: 1.7%;
+}
+#working .working-content .row .j-list ul .j-item .piv span {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444444;
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#working .working-content .row .j-list ul .j-item .pv {
+  padding: 2.5%;
+}
+#working .working-content .row .j-list ul .j-item .pv a {
+  padding: 13px 20px 11px;
+  background: linear-gradient(45deg, #00b8ef, #58d2f5);
+  border-radius: 3px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+}
+#working .working-content .row .j-list ul .j-item .pv a:hover {
+  background: #ffffff;
+  color: #363636;
+}
+#working .working-content .row .j-list ul .j-item:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#00b8ef), to(#58d2f5));
+  background: linear-gradient(270deg, #00b8ef, #58d2f5);
+}
+#working .working-content .row .j-list ul .j-item:hover .pii h6,
+#working .working-content .row .j-list ul .j-item:hover .pii h5,
+#working .working-content .row .j-list ul .j-item:hover .pii p {
+  color: #ffffff;
+}
+#working .working-content .row .j-list ul .j-item:hover .piii i,
+#working .working-content .row .j-list ul .j-item:hover .piii span {
+  color: #ffffff;
+}
+#working .working-content .row .j-list ul .j-item:hover .piv span {
+  color: #ffffff;
+}
+#working .working-content .row .lost-info {
+  margin-top: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#working .working-content .row .lost-info p {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444444;
+  margin-bottom: 0 !important;
+}
+#working .working-content .row .lost-info a {
+  padding: 16px 20px 13px 20px;
+  background: linear-gradient(45deg, #00b8ef, #58d2f5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#working .working-content .row .lost-info a span {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-right: 7px;
+}
+#working .working-content .row .lost-info a i {
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 30px;
+}
+#working .working-content .row .tab {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+#working .working-content .row .tab .registration {
+  width: 49%;
+  padding: 30px 21px 30px 22px;
+  background: #f5f5f5;
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#working .working-content .row .tab .registration h6,
+#working .working-content .row .tab .registration span,
+#working .working-content .row .tab .registration p {
+  margin-bottom: 0 !important;
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#working .working-content .row .tab .registration h6 {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #222222;
+}
+#working .working-content .row .tab .registration span {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #00b8ef;
+}
+#working .working-content .row .tab .registration p {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #222222;
+  padding: 28px 0 30px 0;
+}
+#working .working-content .row .tab .registration a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#working .working-content .row .tab .registration a span {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #222222;
+  margin-right: 8px;
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#working .working-content .row .tab .registration a i {
+  color: #222222;
+  font-size: 20px;
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#working .working-content .row .tab .registration:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#00b8ef), to(#93e6ff));
+  background: linear-gradient(-90deg, #00b8ef, #93e6ff);
+}
+#working .working-content .row .tab .registration:hover h6,
+#working .working-content .row .tab .registration:hover span,
+#working .working-content .row .tab .registration:hover p,
+#working .working-content .row .tab .registration:hover a {
+  color: #ffffff;
+}
+#working .working-content .row .tab .registration:hover a span,
+#working .working-content .row .tab .registration:hover a i {
+  color: #ffffff;
+}
+#trw {
+  background: #f5f5f5;
 }
