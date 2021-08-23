@@ -849,3 +849,176 @@ ul {
 #trw {
   background: #f5f5f5;
 }
+#trw .workers-content .worker-list {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+#trw .workers-content .worker-list .top-worker {
+  margin: 0 15px 55px 15px;
+  padding: 25px 25px 0px 25px;
+  background: #ffffff;
+  border-radius: 5px;
+  transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+}
+#trw .workers-content .worker-list .top-worker:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+#trw .workers-content .worker-list .top-worker:hover .description .link {
+  border-color: #1ac0f1;
+}
+#trw .workers-content .worker-list .top-worker .pic {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  width: 166px;
+  height: 166px;
+  background: #00b8ef;
+  z-index: 10;
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#trw .workers-content .worker-list .top-worker .pic img {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+}
+#trw .workers-content .worker-list .top-worker .pic .rank {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(-45deg, #00b8ef, #58d2f5);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 42px;
+}
+#trw .workers-content .worker-list .top-worker .name {
+  padding-top: 15px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #222222;
+}
+#trw .workers-content .worker-list .top-worker .title {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #222222;
+}
+#trw .workers-content .worker-list .top-worker .star {
+  padding-top: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#trw .workers-content .worker-list .top-worker .star ul {
+  margin-bottom: 0 !important;
+  padding-left: 0 !important;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#trw .workers-content .worker-list .top-worker .star ul li {
+  margin: 0 2px;
+}
+#trw .workers-content .worker-list .top-worker .star ul li i {
+  color: #f68b1e;
+  font-size: 16px;
+}
+#trw .workers-content .worker-list .top-worker .star p {
+  margin-bottom: 0 !important;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #222222;
+  margin-left: 4px;
+}
+#trw .workers-content .worker-list .top-worker .description {
+  padding-top: 22px;
+  width: 100%;
+}
+#trw .workers-content .worker-list .top-worker .description .detail {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #f1f1f1;
+}
+#trw .workers-content .worker-list .top-worker .description .detail.working-rate .pii span {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #222222;
+}
+#trw .workers-content .worker-list .top-worker .description .detail.js {
+  border-bottom: 1px solid #f1f1f1;
+}
+#trw .workers-content .worker-list .top-worker .description .detail .pi,
+#trw .workers-content .worker-list .top-worker .description .detail .pii {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 52px;
+  color: #222222;
+}
+#trw .workers-content .worker-list .top-worker .description .detail.loc .pii span {
+  margin: 0 5px;
+}
+#trw .workers-content .worker-list .top-worker .description .detail.loc .pii span img {
+  width: 20px;
+}
+#trw .workers-content .worker-list .top-worker .description .link {
+  border-bottom: 3px solid transparent;
+  border-radius: 2px;
+  transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+}
+#trw .workers-content .worker-list .top-worker .description .link .profile:hover a {
+  color: #1ac0f1;
+}
+#trw .workers-content .worker-list .top-worker .description .link .profile:hover a i {
+  color: #1ac0f1;
+}
+#trw .workers-content .worker-list .top-worker .description .link .profile a {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 28px 0 26px 0;
+  color: #222222;
+  transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+}
+#trw .workers-content .worker-list .top-worker .description .link .profile a i {
+  font-size: 20px;
+  margin-left: 4px;
+  line-height: 72px;
+  color: #222222;
+  transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+}
