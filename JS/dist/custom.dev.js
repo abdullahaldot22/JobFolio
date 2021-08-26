@@ -1,9 +1,9 @@
 "use strict";
 
-$(window).on("load", function () {
-  $("#load").fadeOut("slow");
-});
 $(document).ready(function () {
+  $(window).on("load", function () {
+    $("#load").fadeOut("slow");
+  });
   $(".slide").slick({
     arrows: false,
     dots: true,
