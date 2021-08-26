@@ -9,10 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arimo:wght@400;500;600;700&family=Lobster+Two:ital@0;1&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/slick-theme.css">
+    <link rel="stylesheet" href="CSS/slick.css">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Job Folio</title>
 </head>
 <body>
+
+  <div id="load"><span></span></div>
 
     <nav class="navbar navbar-expand-lg col-lg-12 navbar-light">
       <div class="container">
@@ -673,10 +677,11 @@
                       <div class="title text-center text-capitalize">wordpress developer</div>
                     </div>
                     <div class="pic">
-                      <img src="images/test-i.png" alt="testimonial">
-                      <i class="video fas fa-video"></i>
-                      <i class="play text-center fas fa-play"></i>
-                      
+                      <div class="det">
+                        <img src="images/test-i.png" alt="testimonial">
+                        <i class="video fas fa-video"></i>
+                        <i class="play text-center fas fa-play"></i>
+                      </div>
                     </div>
                     <div class="text text-center">Click play button to watch video testimonial</div>
                   </div>
@@ -689,9 +694,11 @@
                       <div class="title text-center text-capitalize">wordpress developer</div>
                     </div>
                     <div class="pic">
-                      <img src="images/test-ii.png" alt="testimonial">
-                      <i class="video fas fa-volume-up"></i>
-                      <i class="play text-center fas fa-play"></i>
+                      <div class="det">
+                        <img src="images/test-ii.png" alt="testimonial">
+                        <i class="video fas fa-volume-up"></i>
+                        <i class="play text-center fas fa-play"></i>
+                      </div>
                       
                     </div>
                     <div class="text text-center">Click play button to hear audio testimonial</div>
@@ -699,34 +706,109 @@
                 </div>
 
                 <div class="col-lg-3">
-                  <div class="list" style="margin-top: 60px;">
-                    <div class="pic">
-                      <img src="images/test-iii.png" alt="testimonial">
-                      <i class="video fas fa-pencil-alt"></i>
-                      
+                  <div class="list slide-list" style="margin-top: 62px;">
+                    <div class="pic slide">
+                      <div class="det">
+                        <img src="images/test-iii.png" alt="testimonial">
+                        <i class="video fas fa-pencil-alt"></i>
+                      </div>
+
+                      <div class="det">
+                        <img src="images/test-iv.jpg" alt="testimonial">
+                        <i class="video fas fa-pencil-alt"></i>
+                      </div>
+
+                      <div class="det">
+                        <img src="images/test-v.jpg" alt="testimonial">
+                        <i class="video fas fa-hand-middle-finger"></i>
+                      </div>
+
+                      <div class="det">
+                        <img src="images/test-vi.jpg" alt="testimonial">
+                        <i class="video fas fa-pencil-alt"></i>
+                      </div>
                     </div>
+                    
                   </div>
                 </div>
 
                 <div class="col-lg-3">
-                  <div class="list">
-                    <div class="des">
-                      <div class="name text-left text-capitalize">jenifa oraz</div>
-                      <div class="title text-left text-capitalize" style="margin-bottom: 5px;">wordpress developer</div>
+                  <div class="list-item" style="margin-top: 35px;">
+                    <div class="list">
+                      <div class="des">
+                        <div class="name text-left text-capitalize">jenifa oraz</div>
+                        <div class="title text-left text-capitalize" style="margin-bottom: 5px;">wordpress developer</div>
+                      </div>
+                      <div class="star">
+                        <ul>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <div class="bio" style="padding-bottom: 36px;">
+                        Lorem ipsum dolor sit amet, consetur adipisicing elit, sed do eiusmodepr incididunt ut labore et dolore na aliqua Lorem ipsum.
+                      </div>
                     </div>
-                    <div class="star">
-                      <ul>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                      </ul>
+
+                    <div class="list">
+                      <div class="des">
+                        <div class="name text-left text-capitalize">devid mz</div>
+                        <div class="title text-left text-capitalize" style="margin-bottom: 5px;">web developer</div>
+                      </div>
+                      <div class="star">
+                        <ul>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <div class="bio" style="padding-bottom: 36px;">
+                        Lorem ipsum dolor sit amet, consetur adipisicing elit, sed do eiusmodepr incididunt ut labore et dolore na aliqua Lorem ipsum.
+                      </div>
                     </div>
-                    <div class="bio" style="padding-bottom: 36px;">
-                      Lorem ipsum dolor sit amet, consetur adipisicing elit, sed do eiusmodepr incididunt ut labore et dolore na aliqua Lorem ipsum.
+
+                    <div class="list">
+                      <div class="des">
+                        <div class="name text-left text-capitalize">robert tar</div>
+                        <div class="title text-left text-capitalize" style="margin-bottom: 5px;">it specialist</div>
+                      </div>
+                      <div class="star">
+                        <ul>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <div class="bio" style="padding-bottom: 36px;">
+                        Lorem ipsum dolor sit amet, consetur adipisicing elit, sed do eiusmodepr incididunt ut labore et dolore na aliqua Lorem ipsum.
+                      </div>
                     </div>
-                    
+
+                    <div class="list">
+                      <div class="des">
+                        <div class="name text-left text-capitalize">walter holt</div>
+                        <div class="title text-left text-capitalize" style="margin-bottom: 5px;">sarver management</div>
+                      </div>
+                      <div class="star">
+                        <ul>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <div class="bio" style="padding-bottom: 36px;">
+                        Lorem ipsum dolor sit amet, consetur adipisicing elit, sed do eiusmodepr incididunt ut labore et dolore na aliqua Lorem ipsum.
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -736,8 +818,94 @@
       </div>
     </section>
 
+    <!-- ======================  testimonials ends  ====================== -->
 
+    <section id="milestone">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="head text-centre text-capitalize">
+              <h3 class="text-center">our milestone & partners</h3>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="milestone-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 m-auto">
+              <p class="paragraph text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <div class="milestones">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="box">
+                  <div class="parts">
+                    <h5>220+</h5>
+                    <h6 class="text-capitalize">moU companies</h6>
+                  </div>
+                  <div class="parts">
+                    <h5>18000+</h5>
+                    <h6 class="text-capitalize">employees recruit</h6>
+                  </div>
+                  <div class="parts">
+                    <h5>100%</h5>
+                    <h6 class="text-capitalize">satisfied companies</h6>
+                  </div>
+                  <div class="parts">
+                    <h5>99%</h5>
+                    <h6 class="text-capitalize">satisfied employees</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 ms-auto">
+                <div class="box-two">
+                  <img src="images/p-i.png" alt="partners">
+                  <img src="images/p-ii.png" alt="partners">
+                  <img src="images/p-iii.png" alt="partners">
+                  <img src="images/p-iv.png" alt="partners">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+    </section>
+
+    <!-- ======================  milestone ends  ====================== -->
+
+    <footer>
+      <div class="over">
+        <div class="container">
+          <div class="row one">
+            <div class="col-lg-2 m-auto">
+              <div class="footer-logo">
+                <a href="#"><img src="images/f-logo.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="row two">
+            <div class="col-lg-4">
+              <div class="f-head">
+                <h5 class="text-capitalize">about us</h5>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+              <a href="#"><span class="text-capitalize">read more</span><i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+            <div class="col-lg-2">
+              <div class="f-head">
+                <h5 class="text-capitalize">for candidates</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
 
@@ -787,6 +955,7 @@
 
     <script src="JS/jquery-2.2.4.min.js"></script>
     <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/slick.min.js"></script>
     <script src="JS/custom.js"></script>
 </body>
 </html>
