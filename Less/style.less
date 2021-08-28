@@ -35,9 +35,9 @@ ul{
 
 .load{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: #ffffff;
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     display: flex;
@@ -97,9 +97,7 @@ ul{
 
 
 // mixing declearation
-.body{
-    overflow-x: hidden;
-}
+
 
 .navbar{
     border-top: 4px solid #abe5fa;
@@ -172,7 +170,9 @@ ul{
 
 
 #home{
+    
     background: #fef8ff;
+    overflow: hidden;
 
     .col-lg-12{
         
@@ -182,8 +182,11 @@ ul{
             align-items: center;
             justify-content: center;
             flex-flow: row wrap;
-            position: relative;
+            position: relative; 
+            // position is necessary for both of the method
+            z-index: 1;
 
+            // the first method of banner background part
             // &::before{
             //     content: '';
             //     width: 100%;
@@ -216,9 +219,8 @@ ul{
                     line-height: 30px;
                 }
             }
-
+            // both of the banner part work properly, though its second one
             .banner-img{
-                overflow-x: hidden;
                 img{
                     position: absolute;
                     top: 10px;
@@ -226,112 +228,128 @@ ul{
                 }
             }
 
-            .part-ii{
-                width: 100%;
-                position: absolute;
-                top: 514px;
+            
+        }
+    }
+}
 
-                #pills-tab{
-                    
-                    .nav-item{
-                        .tr(0.2s);
 
-                        .nav-link{
-                            text-transform: capitalize;
-                            padding: 22px 20px !important;
-                            .paragraph-font();
-                            font-size: 20px;
-                            font-weight: 400;
-                            color: #444444;
-                            line-height: 0;
-                            .tr(0.1s);
 
-                            &.active{
-                                background: linear-gradient(45deg, @gr-i, @gr-ii);
-                                color: #ffffff;
-                                box-shadow: 12px 5px 25px -5px rgba(0, 0, 0, 0.2);
-                                border-top-left-radius: 4px;
-                                border-top-right-radius: 4px;
-                                border-bottom-left-radius: 0px;
-                                border-bottom-right-radius: 0px;
-                            }
+#jobs{
+    // margin-top: -44px;
+    background: #fef8ff;
+    padding-top: 44px;
+    
+    .container{
+        position: relative;
+        .part-ii{
+            position: absolute;
+            top: -44px;
+            left: 0;
+            width: 100%;
+            // position: absolute;
+            // top: 514px;
+            
+
+            #pills-tab{
+                .nav-item{
+                    .tr(0.2s);
+
+                    .nav-link{
+                        text-transform: capitalize;
+                        padding: 22px 20px !important;
+                        .paragraph-font();
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: #444444;
+                        line-height: 0;
+                        .tr(0.1s);
+
+                        &.active{
+                            background: linear-gradient(45deg, @gr-i, @gr-ii);
+                            color: #ffffff;
+                            box-shadow: 12px 5px 25px -5px rgba(0, 0, 0, 0.2);
+                            border-top-left-radius: 4px;
+                            border-top-right-radius: 4px;
+                            border-bottom-left-radius: 0px;
+                            border-bottom-right-radius: 0px;
                         }
                     }
                 }
+            }
 
-                .tab-content{
-                    background: #ffffff;
-                    box-shadow: 12px 5px 25px -5px rgba(0, 0, 0, 0.2);
+            .tab-content{
+                background: #ffffff;
+                box-shadow: 12px 5px 25px -5px rgba(0, 0, 0, 0.2);
 
-                    .tab-pane{
-                        .inputs{
-                            
-                            display: flex;
-                            flex-flow: row nowrap;
-                            padding-left: 0px !important;
+                .tab-pane{
+                    .inputs{
+                        
+                        display: flex;
+                        flex-flow: row nowrap;
+                        padding-left: 0px !important;
 
-                            .input{
-                                padding: 35px 10px 35px 28px;
+                        .input{
+                            padding: 35px 10px 35px 28px;
 
-                                &.one{
-                                    width: 350px;
-                                    input{
-                                        .paragraph-font-it();
-                                    }
+                            &.one{
+                                width: 350px;
+                                input{
+                                    .paragraph-font-it();
+                                }
+                            }
+
+                            &.two{
+                                width: 320px;
+                                input{
+                                    .paragraph-font-it();
                                 }
 
-                                &.two{
-                                    width: 320px;
-                                    input{
-                                        .paragraph-font-it();
+                                .btn{
+                                    border-top-right-radius: 5px;
+                                    border-bottom-right-radius: 5px;
+                                    i{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #ced4da;
                                     }
-
+                                }
+                                .input-group{
+                                    .form-control{
+                                        border-right: 0px !important;
+                                    }
                                     .btn{
-                                        border-top-right-radius: 5px;
-                                        border-bottom-right-radius: 5px;
-                                        i{
-                                            font-size: 14px;
-                                            line-height: 20px;
-                                            color: #ced4da;
-                                        }
-                                    }
-                                    .input-group{
-                                        .form-control{
-                                            border-right: 0px !important;
-                                        }
-                                        .btn{
-                                            border: 1px solid #ced4da !important;
-                                            border-left: 0px !important;
-                                        }
+                                        border: 1px solid #ced4da !important;
+                                        border-left: 0px !important;
                                     }
                                 }
+                            }
 
-                                &.three{
-                                    width: 270px;
-                                    select{
-                                        .paragraph-font-it();
-                                        color: #848484;
-                                    }
+                            &.three{
+                                width: 270px;
+                                select{
+                                    .paragraph-font-it();
+                                    color: #848484;
                                 }
+                            }
 
-                                .search{
-                                    width: 110px;
-                                    .paragraph-font();
-                                    height: 38px;
-                                    color: #ffffff;
-                                    background: linear-gradient(45deg, @gr-i, @gr-ii);
-                                    .tr(0.3s);
+                            .search{
+                                width: 110px;
+                                .paragraph-font();
+                                height: 38px;
+                                color: #ffffff;
+                                background: linear-gradient(45deg, @gr-i, @gr-ii);
+                                .tr(0.3s);
 
-                                    &:hover{
-                                        background: linear-gradient(120deg, @gr-i, @gr-ii);
-                                        transform: scale(1.05);
-                                    }
-                                    &:focus{
-                                        transform: scale(1.05);
-                                    }
-                                    &:active{
-                                        transform: scale(1);
-                                    }
+                                &:hover{
+                                    background: linear-gradient(120deg, @gr-i, @gr-ii);
+                                    transform: scale(1.05);
+                                }
+                                &:focus{
+                                    transform: scale(1.05);
+                                }
+                                &:active{
+                                    transform: scale(1);
                                 }
                             }
                         }
