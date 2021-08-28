@@ -1,9 +1,7 @@
 
-$(document).ready(function() {
 
-    $(window).on("load",function(){
-        $("#load").fadeOut("slow");
-    });
+
+$(document).ready(function() {
 
     $(".slide").slick({
         arrows: false,
@@ -28,4 +26,9 @@ $(document).ready(function() {
         asNavFor: '.slide',
     });
 
+});
+
+
+$(window).on("load",function(){
+    $(".load").fadeOut("slow");
 });
