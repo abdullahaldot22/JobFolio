@@ -30,5 +30,5 @@ $(document).ready(function() {
 
 
 $(window).on("load",function(){
-    $(".load").delay(2000).fadeOut(3000);
+    $(".load").fadeOut('slow');
 });
