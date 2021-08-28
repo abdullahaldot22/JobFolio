@@ -112,7 +112,6 @@ ul {
   justify-content: center;
   flex-flow: row wrap;
   position: relative;
-  z-index: 1;
 }
 #home .col-lg-12 .banner-content .part-i {
   padding-bottom: 188px;
