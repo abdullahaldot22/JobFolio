@@ -14,9 +14,11 @@
     <link rel="stylesheet" href="CSS/style.css">
     <title>Job Folio</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarScroll" data-bs-offset="20">
 
   <div class="load"><span class="load-img"></span></div>
+
+  <div class="top"><i class="fas fa-sort-up"></i></div>
 
     <nav class="navbar navbar-expand-lg col-lg-12 navbar-light">
       <div class="container">
@@ -65,12 +67,12 @@
                 </div>
               </div>
 
-              
-              <div class="col-lg-6">
+              <!-- its for background image -->
+              <!-- <div class="col-lg-6">
                 <div class="banner-img">
                   <img class="img-fluid" src="images/banner.png" alt="">
                 </div>
-              </div>
+              </div> -->
               
             </div>
           </div>
@@ -860,19 +862,19 @@
               <div class="col-lg-6">
                 <div class="box">
                   <div class="parts">
-                    <h5>220+</h5>
+                    <h5><span class="number">220</span><span>+</span></h5>
                     <h6 class="text-capitalize">moU companies</h6>
                   </div>
                   <div class="parts">
-                    <h5>18000+</h5>
+                    <h5><span class="number">18000</span><span>+</span></h5>
                     <h6 class="text-capitalize">employees recruit</h6>
                   </div>
                   <div class="parts">
-                    <h5>100%</h5>
+                    <h5><span class="number">100</span><span>%</span></h5>
                     <h6 class="text-capitalize">satisfied companies</h6>
                   </div>
                   <div class="parts">
-                    <h5>99%</h5>
+                    <h5><span class="number">99</span><span>%</span></h5>
                     <h6 class="text-capitalize">satisfied employees</h6>
                   </div>
                 </div>
@@ -1011,6 +1013,8 @@
     <script src="JS/jquery-2.2.4.min.js"></script>
     <script src="JS/bootstrap.bundle.min.js"></script>
     <script src="JS/slick.min.js"></script>
+    <script src="JS/jquery.counterup.min.js"></script>
+    <script src="JS/waypoints.min.js"></script>
     <script src="JS/custom.js"></script>
 </body>
 </html>

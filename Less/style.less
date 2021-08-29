@@ -1,10 +1,5 @@
 
 
-
-
-
-
-
 @cl-i: #848484;
 @gr-i: #00b8ef;
 @gr-ii: #58d2f5;
@@ -99,9 +94,97 @@ ul{
 // mixing declearation
 
 
+
+// nav-fix
+
+.nav-fix{
+    background: rgba(124, 124, 124, 0.95) !important;
+    height: 80px;
+    
+    .navbar-brand{
+        img{
+            width: 100px;
+            
+        }
+    }
+    
+    .collapse{
+        margin-top: 6px !important;
+
+
+        .navbar-nav{
+            
+            .nav-item{
+                margin: 0 16px !important;
+                font-size: 14px !important;
+                .nav-link{
+                    color: #f1f1f1 !important;
+                }
+            }
+
+            .active{
+
+                &::before{
+                    top: -27px !important;
+                }
+            }
+        }
+    }
+    .pop-up{
+        margin-left: 30px !important;
+
+        .sign-up{
+            
+            font-size: 14px !important;
+            padding: 0 12px !important;
+            line-height: 35px !important;
+        }
+    }
+}
+
+// nav-fix ends ------------------------------------------------------------------
+
+// back to top
+
+.top{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #ffffff;
+    border: 2px solid #2cc4f2c0;
+    border-radius: 8px;
+    box-shadow: -4px 2px 7px 1px rgba(175, 175, 175, 0.3);
+    text-align: center;
+    z-index: 999;
+    cursor: pointer;
+    i{
+        font-size: 20px;
+        color: #00b8ef;
+        line-height: 32px;
+    }
+
+}
+
+
+
+// back to top ends ------------------------------------------------------------------------
+
 .navbar{
     border-top: 4px solid #abe5fa;
     background: #fef8ff;
+    position: fixed;
+    z-index: 30;
+    width: 100%;
+    .tr(0.5s);
+
+    .navbar-brand{
+        .tr(0.5s);
+        img{
+            .tr(0.5s);
+        }
+    }
 
     .collapse{
         margin-top: 45px;
@@ -116,29 +199,38 @@ ul{
                 color: @cl-i;
                 margin: 0 22px;
                 position: relative;
+                z-index: 1;
 
                 .nav-link{
                     padding-right: 0 !important;
                     padding-left: 0 !important;
-                    .tr(0.3s);
+                    .tr(0.3s) !important;
 
                     &:hover{
-                        color: #2cc5f2;
+                        color: #2cc5f2 !important;
+                    }
+                }
+
+                .active{
+                    .tr(0.4s) !important;
+                    color: #00b8ef !important;
+                    .nav-link{
+                        .tr(0.4s) !important;
+                    }
+    
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        top: -65px;
+                        left: 0; 
+                        border-top: 4px solid #2cc5f2;
+                        z-index: -1;
+                        .tr(0.4s) !important;
                     }
                 }
             }
-            .active{
-                color: #00b8ef;
-
-                &::before{
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    top: -65px;
-                    left: 0; 
-                    border-top: 4px solid #2cc5f2;
-                }
-            }
+            
         }
     }
     .pop-up{
@@ -161,6 +253,7 @@ ul{
             color: #ffffff;
             padding: 0 20px;
             line-height: 60px;
+            .tr(0.5s);
         }
     }
 }
@@ -170,7 +263,7 @@ ul{
 
 
 #home{
-    
+    padding-top: 126px;
     background: #fef8ff;
     overflow: hidden;
 
@@ -178,26 +271,29 @@ ul{
         
 
         .banner-content{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-flow: row wrap;
+
+            // if background is from html,flex should be avoid
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // flex-flow: row wrap;
             position: relative; 
+            z-index: 1;
             // position is necessary for both of the method
 
             // the first method of banner background part
-            // &::before{
-            //     content: '';
-            //     width: 100%;
-            //     height: 100%;
-            //     position: absolute;
-            //     top: 0;
-            //     right: -165px;
-            //     background: url(../images/banner.png) no-repeat right;
-            //     vertical-align: top !important;
-            //     z-index: -1;
+            &::before{
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                right: -160px;
+                background: url(../images/banner.png) no-repeat right;
+                vertical-align: top !important;
+                z-index: -1;
                 
-            // }
+            }
 
             .part-i{
                 padding-bottom: 188px;
@@ -219,13 +315,14 @@ ul{
                 }
             }
             // both of the banner part work properly, though its second one
-            .banner-img{
-                img{
-                    position: absolute;
-                    top: 10px;
-                    right: -140px;
-                }
-            }
+            // if priority is forground content, should work with z-index or avoid it
+            // .banner-img{
+            //     img{
+            //         position: absolute;
+            //         top: 10px;
+            //         right: -140px;
+            //     }
+            // }
 
             
         }
