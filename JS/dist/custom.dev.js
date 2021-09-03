@@ -38,7 +38,6 @@ $(document).ready(function () {
   });
   $(".list-item").slick({
     arrows: false,
-    dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 900,

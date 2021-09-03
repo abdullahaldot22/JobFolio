@@ -46,6 +46,9 @@ ul {
 .nav-fix .navbar-brand img {
   width: 100px;
 }
+.nav-fix .navbar-toggler span {
+  color: #ffffff;
+}
 .nav-fix .collapse {
   margin-top: 6px !important;
 }
@@ -134,7 +137,7 @@ ul {
 }
 .navbar .collapse .navbar-nav .nav-item .nav-link {
   padding-right: 0 !important;
-  padding-left: 0 !important;
+  padding-left: 0;
   transition: all linear 0.3s !important;
   -o-transition: all linear 0.3s !important;
   -moz-transition: all linear 0.3s !important;
@@ -145,12 +148,12 @@ ul {
   color: #2cc5f2 !important;
 }
 .navbar .collapse .navbar-nav .nav-item .active {
+  color: #00b8ef !important;
   transition: all linear 0.4s !important;
   -o-transition: all linear 0.4s !important;
   -moz-transition: all linear 0.4s !important;
   -ms-transition: all linear 0.4s !important;
   -webkit-transition: all linear 0.4s !important;
-  color: #00b8ef !important;
 }
 .navbar .collapse .navbar-nav .nav-item .active .nav-link {
   transition: all linear 0.4s !important;
@@ -1085,13 +1088,14 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 55px;
 }
 #trw .workers-content .worker-list .top-worker {
-  margin: 0 15px 55px 15px;
+  width: 95%;
+  margin-bottom: 55px;
   padding: 25px 25px 0px 25px;
   background: #ffffff;
   border-radius: 5px;
@@ -1128,6 +1132,7 @@ ul {
   border-radius: 50%;
   position: absolute;
   bottom: 0;
+  left: 0;
 }
 #trw .workers-content .worker-list .top-worker .pic .rank {
   position: absolute;
@@ -1359,11 +1364,17 @@ ul {
       -ms-flex-pack: start;
           justify-content: start;
 }
+#testimonial .test-content .people .list-item {
+  margin-top: 35px;
+}
 #testimonial .test-content .people .list {
   margin: 0 10px 0 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+#testimonial .test-content .people .list.slide-list {
+  margin-top: 62px;
 }
 #testimonial .test-content .people .list .des {
   margin-top: 95px;
